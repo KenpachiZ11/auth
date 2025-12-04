@@ -1,0 +1,46 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+
+    // === Базовые настройки ===
+    "target": "es2022",
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+
+    // === Настройки вывода ===
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // === Настройки проверки типов ===
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // === Интероперабельность ===
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // === Модули ===
+    "moduleDetection": "force",
+    // "verbatimModuleSyntax": true,
+
+    // === Генерация файлов ===
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // === React ===
+    "jsx": "react-jsx",
+
+    // === Прочее ===
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+}
